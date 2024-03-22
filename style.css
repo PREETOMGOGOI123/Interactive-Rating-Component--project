@@ -1,0 +1,206 @@
+:root {
+  --color-background-primary: rgb(18, 20, 23);
+  --color-container-background-light: rgb(35, 42, 52);
+  --color-container-background-dark : rgb(23, 29, 38);
+ 
+  --color-icon-background: rgb(38, 46, 56);
+  --color-text-primary: rgb(150, 159, 173); 
+
+  --color-white: #fff;
+  --color-orange: rgb(252, 118, 20);
+
+  --gutter-vertical: 3rem;
+}
+
+
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-background-primary);
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  line-height: 2.4rem;
+}
+
+.u-margin-bottom:not(:last-child) {
+  margin-bottom: var(--gutter-vertical);
+}
+
+.u-display-block {
+  display: block;
+}
+
+.container-main{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 38rem;
+  max-height: 38.4rem;
+  padding: 3.2rem 2.4rem;
+  border-radius: 3rem;
+  background-image: linear-gradient(to bottom, #232a34, hsl(216, 24%, 12%));
+  position: absolute;
+
+  .image-container {
+    width: 100%;
+    margin-left: 0;
+  
+  .container-icon {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--color-icon-background);
+    padding: 1.675rem;
+    position: relative;
+    
+    .icon{
+      width: 1.396rem;
+      height:1.333rem;
+      }
+    }
+  }
+
+
+  .main-section {
+    width: 34rem;
+    margin: 0 auto;
+
+    .text-container {
+
+      h2, p{
+        text-align: left;
+      }
+  
+      .heading-secondary {
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: var(--color-white);
+        }
+      }
+  
+    .rating-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      .rating-input{
+        display: none;
+      }
+  
+      .btn-rating {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: var(--color-text-primary);
+        width: 5.1rem;
+        height: 5.1rem;
+        border-radius: 50%;
+        background-color: rgb(38, 46, 56);
+        line-height: 5.1rem;
+        cursor: pointer;
+        transition: all 0.48s;
+      }
+  
+      .btn-rating:hover {
+        background-color: rgb(252, 118, 20);
+        color: white;
+      }
+  
+      .rating-input:checked + .btn-rating {
+        background-color: rgb(150, 159, 173);
+        color: white;
+      }
+    }   
+  }
+  
+  #btn-submit {
+    width: 34.1rem;
+    height: 4.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-white);
+    letter-spacing: 2px;
+    background-color: rgb(252, 118, 20);
+    border-radius: 2.25rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.48s;
+  }
+  
+  #btn-submit:hover {
+    background-color: white;
+    color: var(--color-orange);
+  }
+  
+  .final-icon-container {
+    max-height: 10.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #final-icon {
+    height: 10.8rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+}
+
+
+/* Final Screen styling after submit button is clicked */
+
+
+.image-container{
+
+  .final-icon-container{
+    display: inline-block;
+    margin-left: 25%;
+  }
+}
+
+
+.
+   .final-rating-container {
+    width: 19.3rem;
+    height: 3.2rem;
+    border-radius: 2.25rem;
+    line-height: 3.2rem;
+    display: inline-block;
+    margin-left: 25%;
+    background-color: var(--color-icon-background);
+
+    p{
+      margin: 0;
+      color: var(--color-orange);
+    }
+  }
+
+  h2{ 
+    font-size: 2.8rem;
+    margin-top: 3rem;
+    color: white;
+  }
+  h2, p{
+    display: block;
+    text-align: center; 
+  }
+
+
