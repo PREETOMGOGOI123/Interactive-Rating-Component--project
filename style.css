@@ -9,7 +9,7 @@
   --color-white: #fff;
   --color-orange: rgb(252, 118, 20);
 
-  --gutter-vertical: 3rem;
+  --gutter-vertical: 3.2rem;
 }
 
 
@@ -33,7 +33,6 @@ body {
   font-family: "Overpass", sans-serif;
   font-size: 1.5rem;
   color: var(--color-text-primary);
-  line-height: 2.4rem;
 }
 
 .u-margin-bottom:not(:last-child) {
@@ -44,13 +43,19 @@ body {
   display: block;
 }
 
+.heading-secondary {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--color-white);
+  }
+
 .container-main{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  max-width: 38rem;
-  max-height: 38.4rem;
+  max-width: 41.2;
+  max-height: 41.6rem;
   padding: 3.2rem 2.4rem;
   border-radius: 3rem;
   background-image: linear-gradient(to bottom, #232a34, hsl(216, 24%, 12%));
@@ -88,12 +93,6 @@ body {
       h2, p{
         text-align: left;
       }
-  
-      .heading-secondary {
-        font-size: 2.8rem;
-        font-weight: bold;
-        color: var(--color-white);
-        }
       }
   
     .rating-container{
@@ -171,36 +170,53 @@ body {
 .image-container{
 
   .final-icon-container{
-    display: inline-block;
-    margin-left: 25%;
+    display: flex;
   }
 }
 
 
-.
-   .final-rating-container {
+.text-content{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .final-rating-container {
+    display: flex;
+    justify-content: center;
     width: 19.3rem;
     height: 3.2rem;
     border-radius: 2.25rem;
     line-height: 3.2rem;
-    display: inline-block;
-    margin-left: 25%;
     background-color: var(--color-icon-background);
 
     p{
-      margin: 0;
       color: var(--color-orange);
+      margin: 0;
     }
   }
 
-  h2{ 
-    font-size: 2.8rem;
-    margin-top: 3rem;
-    color: white;
+  p{
+    margin-top: 0;
+    text-align: center;
   }
-  h2, p{
-    display: block;
-    text-align: center; 
-  }
+}
+  
 
 
+@media screen and (max-width: 600px){
+  .container-main{
+    max-width: 32.7rem;
+    max-height: 36rem;
+  
+    .main-section{
+      max-width: 27.9rem;
+    }
+
+    #btn-submit {
+      width: 27.9rem;
+      height: 4.5rem;
+    }
+  }
+}
+;

@@ -23,10 +23,10 @@ let selectedRating;
 
 
 function displayScreen(rating){
-    imageContainer.innerHTML = `<div class = "final-icon-container"><img src = "${outputIcon}" id = "final-icon" class = "u-margin-bottom"></img></div>`;   
+    imageContainer.innerHTML = `<div class = "final-icon-container"><img src = "${outputIcon}" id = "final-icon" class = "u-margin-bottom"></img></div>`   
     textContainer.innerHTML = `<div class = "text-content"><div class = "final-rating-container"><p>${ratingMessage(rating)}</p></div>
-                                <h2 class = "heading-secondary u-margin-bottom final-header">${heading}</h2>
-                                <p class=>${paragraph}</p></div>`
+                                <div><h2 class = "heading-secondary u-margin-bottom final-header">${heading}</h2></div>
+                                <p class=>${paragraph}</p></div>`;
 }
 
 ratingButton.forEach(button => {
