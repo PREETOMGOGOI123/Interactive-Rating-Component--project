@@ -3,7 +3,7 @@
 This repository contains the code for an **Interactive Rating Component** that allows users to submit feedback with a rating.
 
 Uploaded to <mark>Vercel</mark> for a live intereaction :
-[https://vercel.com/preetomgogoi123s-projects/interactive-rating-component-project]
+https://vercel.com/preetomgogoi123s-projects/interactive-rating-component-project
 
 
 Functionality:
@@ -34,5 +34,5 @@ Setup and Usage:
   - Install dependencies (if any) using `npm install`.
   - Open the `index.html` file in a web browser.
 
-[https://www.frontendmentor.io/home]
+https://www.frontendmentor.io/home
 Challenged from frontendmentor
