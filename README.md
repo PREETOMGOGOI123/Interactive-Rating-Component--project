@@ -2,7 +2,7 @@
 
 This repository contains the code for an **Rating Component** that allows users to submit feedback using a visual intereaction component. 
 
-
+![sample-image](https://github.com/PREETOMGOGOI123/Interactive-Rating-Component--project/blob/main/sample%20image.png)
 
 Uploaded to <mark>Vercel</mark> for a live intereaction :
 [https://vercel.com/preetomgogoi123s-projects/interactive-rating-component-project](https://interactive-rating-component-olive-phi.vercel.app/)
