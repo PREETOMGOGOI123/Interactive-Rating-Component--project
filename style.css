@@ -35,15 +35,15 @@ body {
   color: var(--color-text-primary);
 }
 
-.u-margin-bottom:not(:last-child) {
+.bottom-margin:not(:last-child) {
   margin-bottom: var(--gutter-vertical);
 }
 
-.u-display-block {
+.display-block {
   display: block;
 }
 
-.heading-secondary {
+.display-message-heading {
   font-size: 2.8rem;
   font-weight: bold;
   color: var(--color-white);
@@ -65,7 +65,7 @@ body {
     width: 100%;
     margin-left: 0;
   
-  .container-icon {
+  .icon-container {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -149,13 +149,13 @@ body {
     color: var(--color-orange);
   }
   
-  .final-icon-container {
+  .icon-container-2 {
     max-height: 10.8rem;
     display: flex;
     justify-content: center;
   }
   
-  #final-icon {
+  #icon-2 {
     height: 10.8rem;
     margin: 0;
     padding: 0;
@@ -181,7 +181,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  .final-rating-container {
+  .selected-rating_display-container   {
     display: flex;
     justify-content: center;
     width: 19.3rem;

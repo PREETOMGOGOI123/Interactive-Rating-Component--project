@@ -1,7 +1,7 @@
 'use strict'
 
 const submitButton = document.getElementById('btn-submit');
-const ratingButton = document.querySelectorAll('.rating-input');
+const ratingButtons = document.querySelectorAll('.rating-input');
 
 const imageContainer = document.querySelector('.image-container');
 const textContainer = document.querySelector('.main-section');
@@ -23,13 +23,13 @@ let selectedRating;
 
 
 function displayScreen(rating){
-    imageContainer.innerHTML = `<div class = "final-icon-container"><img src = "${outputIcon}" id = "final-icon" class = "u-margin-bottom"></img></div>`   
-    textContainer.innerHTML = `<div class = "text-content"><div class = "final-rating-container"><p>${ratingMessage(rating)}</p></div>
-                                <div><h2 class = "heading-secondary u-margin-bottom final-header">${heading}</h2></div>
+    imageContainer.innerHTML = `<div class = "icon-container-2"><img src = "${outputIcon}" id = "icon-2" class="bottom-margin"></img></div>`   
+    textContainer.innerHTML = `<div class = "text-content"><div class = "selected-rating_dispaly-container"><p>${ratingMessage(rating)}</p></div>
+                                <div><h2 class = "display-message-heading bottom-margin">${heading}</h2></div>
                                 <p class=>${paragraph}</p></div>`;
 }
 
-ratingButton.forEach(button => {
+ratingButtons.forEach(button => {
     button.addEventListener('click',function(e){
         e.stopPropagation();
         selectedRating = this.value;
