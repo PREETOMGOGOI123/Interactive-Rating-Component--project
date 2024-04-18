@@ -1,10 +1,11 @@
 'use strict'
 
-const submitButton = document.getElementById('btn-submit');
+const submitButton = document.getElementById('submitBtn');
 const ratingButtons = document.querySelectorAll('.rating-input');
 
 const imageContainer = document.querySelector('.image-container');
 const textContainer = document.querySelector('.main-section');
+const mainContainer = document.querySelector('.container-main')
 
 const contentToDisplay = {
     outputIcon : '/images/illustration-thank-you.svg',
@@ -23,10 +24,14 @@ let selectedRating;
 
 
 function displayScreen(rating){
-    imageContainer.innerHTML = `<div class = "icon-container-2"><img src = "${outputIcon}" id = "icon-2" class="bottom-margin"></img></div>`   
-    textContainer.innerHTML = `<div class = "text-content"><div class = "selected-rating_dispaly-container"><p>${ratingMessage(rating)}</p></div>
-                                <div><h2 class = "display-message-heading bottom-margin">${heading}</h2></div>
-                                <p class=>${paragraph}</p></div>`;
+
+    submitButton.remove();
+    mainContainer.id = 'padding-new';
+
+    imageContainer.innerHTML = `<div class = "icon-container-2" id=""><img src = "${outputIcon}" id = "icon-2"></img></div>`   
+    textContainer.innerHTML = `<div class = "main-section" id="align-center"><div class = "selected-rating__container"><p>${ratingMessage(rating)}</p></div>
+                                <div class="text-content" id=""align-center"><h2>${heading}</h2>
+                                <p class=>${paragraph}</p></div></div>`;
 }
 
 ratingButtons.forEach(button => {

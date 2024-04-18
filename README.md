@@ -6,13 +6,13 @@ Uploaded to <mark>Vercel</mark> for a live intereaction :
 https://vercel.com/preetomgogoi123s-projects/interactive-rating-component-project
 
 
-Functionality:
+### Functionality:
 
   - Users are asked to provide a feedback rating from 1 to 5 by clicking to make a selection of the corresponding radio button.
   - Click on the Submit button and a "Thank You Message" will be displayed.
   - In case the Submit button is clicked without making any selection from the radio button, a prompt will appear asking the user to select a rating.
 
-Features:
+### Features:
 
   - Responsive design.
   - Interactive radio buttons.
@@ -20,7 +20,7 @@ Features:
   - Use of Google Fonts.
   - Use of styling features like FlexBox and Grid.
 
-Code Structure:
+### Code Structure:
 
   The project is organized into the following files:
   - `index.html`: Contains the HTML structure of the component.
@@ -28,7 +28,7 @@ Code Structure:
   - `script.js`: Implements the interactive behavior using JavaScript.
   -  An image folder containing the images used to design the component.
 
-Setup and Usage:
+### Setup and Usage:
       
   - Clone this repository.
   - Install dependencies (if any) using `npm install`.

@@ -1,15 +1,17 @@
-:root {
-  --color-background-primary: rgb(18, 20, 23);
-  --color-container-background-light: rgb(35, 42, 52);
-  --color-container-background-dark : rgb(23, 29, 38);
- 
-  --color-icon-background: rgb(38, 46, 56);
-  --color-text-primary: rgb(150, 159, 173); 
 
-  --color-white: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-background-primary: #121417;
+  --color-container-background-light: #232a34;
+  --color-container-background-dark : #171d26;
+ 
+  --color-icon-background: #262e38;
+  --color-text-primary: #969fad; 
+
   --color-orange: rgb(252, 118, 20);
 
-  --gutter-vertical: 3.2rem;
+  --gutter-vertical: 3rem;
 }
 
 
@@ -27,27 +29,23 @@ html {
 body {
   box-sizing: border-box;
   background-color: var(--color-background-primary);
-}
-
-body {
+  
   font-family: "Overpass", sans-serif;
   font-size: 1.5rem;
   color: var(--color-text-primary);
+  line-height: 2.4rem;
 }
 
-.bottom-margin:not(:last-child) {
-  margin-bottom: var(--gutter-vertical);
+h2, p {
+  margin: 0;
 }
 
-.display-block {
-  display: block;
-}
-
-.display-message-heading {
+h2 {
   font-size: 2.8rem;
   font-weight: bold;
-  color: var(--color-white);
-  }
+  color: white;
+  line-height: 3.5rem;
+}
 
 .container-main{
   position: absolute;
@@ -56,17 +54,22 @@ body {
   transform: translate(-50%, -50%);
   max-width: 41.2;
   max-height: 41.6rem;
-  padding: 3.2rem 2.4rem;
+  padding: 3.2rem;
   border-radius: 3rem;
   background-image: linear-gradient(to bottom, #232a34, hsl(216, 24%, 12%));
   position: absolute;
 
+  display: flex;
+  flex-direction: column;
+  row-gap:var(--gutter-vertical);
+
   .image-container {
+    display: block;
     width: 100%;
     margin-left: 0;
   
   .icon-container {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 2.5rem;
@@ -86,25 +89,29 @@ body {
 
   .main-section {
     width: 34rem;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gutter-vertical);
 
     .text-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        justify-content: left;
+      }
 
-      h2, p{
-        text-align: left;
-      }
-      }
   
     .rating-container{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      column-gap: 2.1rem;
       
       .rating-input{
         display: none;
       }
   
-      .btn-rating {
+      .ratingBtn {
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
@@ -118,33 +125,33 @@ body {
         transition: all 0.48s;
       }
   
-      .btn-rating:hover {
-        background-color: rgb(252, 118, 20);
+      .ratingBtn:hover {
+        background-color: var(--color-orange);
         color: white;
       }
   
-      .rating-input:checked + .btn-rating {
-        background-color: rgb(150, 159, 173);
+      .rating-input:checked + .ratingBtn {
+        background-color: #969fad;
         color: white;
       }
     }   
   }
   
-  #btn-submit {
+  #submitBtn {
     width: 34.1rem;
     height: 4.5rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--color-white);
+    color: white;
     letter-spacing: 2px;
-    background-color: rgb(252, 118, 20);
+    background-color: var(--color-orange);
     border-radius: 2.25rem;
     border: none;
     cursor: pointer;
     transition: all 0.48s;
   }
   
-  #btn-submit:hover {
+  #submitBtn:hover {
     background-color: white;
     color: var(--color-orange);
   }
@@ -166,6 +173,14 @@ body {
 
 /* Final Screen styling after submit button is clicked */
 
+#padding-new {
+  padding: 4.5rem 3.2rem;
+}
+
+#align-center {
+  align-items: center;
+  text-align: center;
+}
 
 .image-container{
 
@@ -174,30 +189,21 @@ body {
   }
 }
 
+.selected-rating__container {
+
+  background-color: var(--color-icon-background);
+  color: var(--color-orange);
+  padding: 0.5rem 3.9rem;
+  border-radius: 2.25rem;
+}
+
 
 .text-content{
-
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  .selected-rating_display-container   {
-    display: flex;
-    justify-content: center;
-    width: 19.3rem;
-    height: 3.2rem;
-    border-radius: 2.25rem;
-    line-height: 3.2rem;
-    background-color: var(--color-icon-background);
-
-    p{
-      color: var(--color-orange);
-      margin: 0;
-    }
-  }
+  row-gap: 0.7rem;
 
   p{
-    margin-top: 0;
     text-align: center;
   }
 }
@@ -219,4 +225,4 @@ body {
     }
   }
 }
-;
+
