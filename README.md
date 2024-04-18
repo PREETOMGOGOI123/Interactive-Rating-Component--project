@@ -2,7 +2,9 @@
 
 This repository contains the code for an **Interactive Rating Component** that allows users to submit feedback with a rating.
 
-Uploaded to <mark>Vercel</mark> for a live intereaction :
+![image](https://github.com/PREETOMGOGOI123/Interactive-Rating-Component--project/blob/finalized-codes/image-demo.png)
+
+Live Demo :
 https://vercel.com/preetomgogoi123s-projects/interactive-rating-component-project
 
 
